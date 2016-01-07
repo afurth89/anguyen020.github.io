@@ -1,0 +1,116 @@
+/* Button A */
+.btn-a {
+  border: 5px solid #007DB8;
+  color: #007DB8;
+  overflow: hidden;
+}
+
+.btn-a:after {
+  content: "";
+  padding: auto;
+  width: 101%;
+  height: 0;
+  background: #007DB8;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.btn-a:hover {
+  color: #fff;
+}
+
+.btn-a:hover:after {
+  height: 110%;
+  opacity: 1;
+}
+
+.btn-a:active {
+  top: 2px;
+}
+
+/* Button B */
+.btn-b {
+  background-color: #EA7C46;
+  color: #fff;
+  box-shadow: 0 6px #C46639;
+  border-radius: 20px;
+
+  transition: none;
+}
+
+.btn-b:hover {
+  box-shadow: 0 4px #C46639;
+  top: 2px;
+}
+
+.btn-b:active {
+  box-shadow: 0 0 #C46639;
+  top: 6px;
+}
+
+/* Button C */
+.btn-c {
+  background-color: #2AAB33;
+  border: 3px dashed #2AAB33;
+  color: white;
+  border-radius: 40px;
+  transition: none;
+}
+
+.btn-c:active {
+  top: 2px;
+}
+
+.btn-c:hover {
+
+  color: #2AAB33;
+  background: transparent;
+}
+
+/* Button D */
+.perspective {
+  perspective: 600px;
+  display: inline-block;
+}
+
+.btn-d {
+  background-color: #D3444A;
+  color: #fff;
+  transform-style: preserve-3d;
+}
+
+.btn-d:after {
+  width: 20%;
+  height: 100%;
+  left: 100%;
+  top: 0;
+  background: #A4343A;
+  transform-origin: 0% 0%;
+  transform: rotateY(90deg);
+}
+
+.btn-d:hover {
+  transform: rotateY(-20deg);
+}
+
+.btn-d:active {
+  background-color: #A4343A;
+}
+
+/* Button E */
+.btn-e {
+  background-color: #BE62AD;
+  color: #fff;
+}
+
+.btn-e:hover {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0%, 100% {transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
