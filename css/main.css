@@ -1,7 +1,13 @@
- body {
+body {
   background-color: #E6E5EC;
   font-family: Raleway, Helvetica, sans-serif;
   text-align: center;
+  display: flex;
+  min-height: 100vh;
+}
+
+main {
+  margin: auto;
 }
 
 h1 {
