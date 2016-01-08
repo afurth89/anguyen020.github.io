@@ -21,7 +21,7 @@ nav a {
   padding: 2% 3%;
 }
 
-nav nav a::before,
+nav a::before,
 nav a::after {
   opacity: 0;
   display: inline-block;
