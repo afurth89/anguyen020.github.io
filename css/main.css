@@ -4,12 +4,13 @@ body {
   font-family: Raleway, Helvetica, sans-serif;
   text-align: center;
   display: flex;
+  flex-direction: column;
   min-height: 100vh;
+  justify-content: space-around;
   letter-spacing: 2px;
 }
 
 nav {
-  margin-bottom: 10%;
   min-width: 100vw;
   padding: 2%;
   background: #848484;
@@ -47,7 +48,8 @@ nav a:hover::after {
 }
 
 main {
-  margin: 0 auto;
+  flex: 1;
+  margin: 8% 0;
 }
 
 h1 {
@@ -56,9 +58,18 @@ h1 {
 }
 
 h1 small {
-  padding-top: 1%;
+  padding: 1%;
   display: block;
-  font-size: .4em;
+  font-size: .5em;
   font-weight: 400;
+}
 
+footer {
+  margin: 3%;
+  font-size: .7em
+}
+
+footer a {
+  color: #7295BA;
+  font-weight: 600;
 }
