@@ -1,0 +1,18 @@
+main {
+  font-weight: bold;
+  font-size: 3em;
+  margin: 20% auto;
+}
+
+main span {
+  padding: 2px;
+  animation-name: moveUpDown;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moveUpDown {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
