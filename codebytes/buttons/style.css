@@ -9,7 +9,8 @@ body {
 }
 
 main {
-  margin: auto;
+  margin: 8% auto;
+  width: 80%;
 }
 
 /*  Style all buttons  */
@@ -154,9 +155,10 @@ button:after {
   background-color: #BE62AD;
   color: #fff;
   border-radius: 40px;
+  transition: opacity 0.3s;
 }
 
-.btn-e:hover {
+.active {
   animation: shake 0.5s;
 }
 
