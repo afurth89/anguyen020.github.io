@@ -1,0 +1,16 @@
+h1 {
+  border-bottom: 2px dashed #3E4246;
+  width: 60%;
+  margin: 0 auto 5% auto;
+}
+p {
+  width: 60%;
+  margin: 2% auto;
+  text-align: left;
+  line-height: 140%;
+}
+
+a {
+  font-weight: 600;
+  color: #7295BA;
+}
