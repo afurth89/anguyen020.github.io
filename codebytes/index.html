@@ -23,13 +23,14 @@
   </main>
 
   <script>
-    var codebytes = ['everything-is-awesome', 'buttons', 'links'];
-    codebytes.forEach(function(name) {
+    var folders = ['everything-is-awesome', 'buttons', 'links'];
+    var codebytes = document.createDocumentFragment();
+
+    folders.forEach(function(name) {
       var div  = make("div"),
           a    = make("a"),
           h2   = make("h2"),
-          img  = make("img"),
-          main = document.getElementsByTagName("main")[0];
+          img  = make("img")
 
       a.href = name + "/index.html";
       h2.innerHTML = name.replace(/-/g, " ");
@@ -37,8 +38,10 @@
       a.appendChild(h2);
       a.appendChild(img);
       div.appendChild(a);
-      main.appendChild(div);
+      codebytes.appendChild(div);
     });
+
+    document.getElementsByTagName("main")[0].appendChild(codebytes);
 
     function make(tag) {
       return document.createElement(tag);
