@@ -4,7 +4,7 @@ body {
 }
 
 main {
-  margin: auto;
+  margin: 8% auto;
 }
 
 h1 {
@@ -19,7 +19,7 @@ h1 {
   justify-content: space-between;
 }
 
-a {
+div a {
   position: relative;
   text-decoration: none;
   font-size: 1.5em;
