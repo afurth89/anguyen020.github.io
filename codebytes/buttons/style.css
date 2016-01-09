@@ -3,6 +3,10 @@ body {
   min-height: 100vh;
 }
 
+h1 {
+  border-bottom: 2px solid #3E4246;
+}
+
 main {
   margin: 8% auto;
   width: 80%;
