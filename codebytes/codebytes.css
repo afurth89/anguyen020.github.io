@@ -12,6 +12,7 @@ main {
 }
 
 a {
+  position: relative;
   text-decoration: none;
   color: #3E4246;
 }
@@ -37,6 +38,11 @@ img {
   outline: 1px solid #3E4246;
 }
 
+a:hover {
+  top: -2px;
+}
+
 img:hover {
   cursor: pointer;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
