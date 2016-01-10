@@ -1,0 +1,13 @@
+a.code {
+  text-decoration: underline;
+}
+
+a.code:hover {
+  top: 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+img {
+  margin-bottom: 3%;
+}
