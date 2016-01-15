@@ -1,5 +1,7 @@
 body {
   min-height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -14,8 +16,12 @@ h1 {
 .section {
   width: 890px;
   margin-bottom: 60px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 div a {
@@ -50,12 +56,16 @@ span {
 
 a.ln-b {
   overflow: hidden;
+  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 a.ln-b span {
   display: inline-block;
+  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 a.ln-b span::after {
@@ -64,21 +74,26 @@ a.ln-b span::after {
   left: 40%;
   content: 'GO';
   font-weight: 600;
-  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
+          transform: translate3d(0,0,0);
 }
 
 a.ln-b:hover span {
-  transform: translateY(-140%);
+  -webkit-transform: translateY(-140%);
+          transform: translateY(-140%);
 }
 
 /*  Link C  */
 a.ln-c {
+  transition: font-weight 0.3s, -webkit-transform 0.3s;
   transition: transform 0.3s, font-weight 0.3s;
+  transition: transform 0.3s, font-weight 0.3s, -webkit-transform 0.3s;
 }
 
 a.ln-c:hover {
   font-weight: 600;
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 /*  Link D  */
@@ -90,23 +105,28 @@ a.ln-d::after {
   left: 0;
   background: #424652;
   opacity: 0;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
 }
 
 a.ln-d::before {
   top: 0;
-  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 a.ln-d::after {
   bottom: 0;
-  transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 a.ln-d:hover::after,
 a.ln-d:hover::before {
   opacity: 1;
-  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 /*  Link E  */
@@ -167,15 +187,19 @@ a.ln-g::after {
   left: 0; top: 35%;
   height: 2px;
   background: #424652;
+  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 a.ln-g::before {
-  transform: translateY(-25px);
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
 }
 
 a.ln-g::after {
-  transform: translateY(15px);
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
 }
 
 a.ln-g:hover {
@@ -184,12 +208,14 @@ a.ln-g:hover {
 
 a.ln-g:hover::before {
   opacity: 0.7;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 a.ln-g:hover::after {
   opacity: 0.7;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 /*  Link H  */
 a.ln-h {
@@ -203,14 +229,18 @@ a.ln-h::after {
   top: 0; left: 0;
   width: 100%; height: 100%;
   border: 2px solid #424652;
-  transform: translateX(10px) translateY(-10px);
+  -webkit-transform: translateX(10px) translateY(-10px);
+          transform: translateX(10px) translateY(-10px);
   opacity: 0;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
 }
 
 a.ln-h:hover::after {
   opacity: 1;
-  transform: translateX(0px) translateY(0px);
+  -webkit-transform: translateX(0px) translateY(0px);
+          transform: translateX(0px) translateY(0px);
 }
 
 /*  Link I  */
@@ -218,23 +248,28 @@ a.ln-i::before,
 a.ln-i::after {
   opacity: 0;
   display: inline-block;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
 }
 
 a.ln-i::before {
   content: '{';
   margin-right: 15px;
-  transform: translateX(-20px);
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
 }
 
 a.ln-i::after {
   content: '}';
   margin-left: 15px;
-  transform: translateX(20px);
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
 }
 
 a.ln-i:hover::before,
 a.ln-i:hover::after {
   opacity: 1;
-  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
 }

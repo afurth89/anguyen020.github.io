@@ -1,4 +1,6 @@
 body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
 }
@@ -28,8 +30,6 @@ button {
   font-weight: 700;
   outline: none;
   position: relative;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -37,8 +37,6 @@ button:after {
   content: '';
   position: absolute;
   z-index: -1;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -58,7 +56,8 @@ button:after {
   opacity: 0;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
 }
 
 .btn-a:hover {
@@ -102,11 +101,13 @@ button:after {
   padding: 20px 70px;
   border-radius: 15px;
   transition: none;
-  transform: skewX(45deg);
+  -webkit-transform: skewX(45deg);
+          transform: skewX(45deg);
 }
 
 .btn-c > div {
-  transform: skewX(-45deg);
+  -webkit-transform: skewX(-45deg);
+          transform: skewX(-45deg);
 }
 
 .btn-c:active {
@@ -121,14 +122,16 @@ button:after {
 
 /* Button D */
 .perspective {
-  perspective: 600px;
+  -webkit-perspective: 600px;
+          perspective: 600px;
   display: inline-block;
 }
 
 .btn-d {
   background-color: #D3444A;
   color: #fff;
-  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 .btn-d:after {
@@ -137,12 +140,15 @@ button:after {
   left: 100%;
   top: 0;
   background: #A4343A;
-  transform-origin: 0% 0%;
-  transform: rotateY(90deg);
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
 }
 
 .btn-d:hover {
-  transform: rotateY(-20deg);
+  -webkit-transform: rotateY(-20deg);
+          transform: rotateY(-20deg);
 }
 
 .btn-d:active {
@@ -158,11 +164,18 @@ button:after {
 }
 
 .active {
-  animation: shake 0.5s;
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {-webkit-transform: translateX(0);transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);transform: translateX(10px);}
 }
 
 @keyframes shake {
-  0%, 100% {transform: translateX(0);}
-  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
-  20%, 40%, 60%, 80% {transform: translateX(10px);}
+  0%, 100% {-webkit-transform: translateX(0);transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);transform: translateX(10px);}
 }
