@@ -1,0 +1,208 @@
+main {
+  width: 100%
+}
+
+.scene {
+  width:25%;
+}
+
+.scene {
+  width: 500px;
+  margin: auto;
+}
+
+.clouds-wrapper {
+  width: 100%;
+}
+
+.cloud1 {
+  position: absolute;
+  top: 35%; left: 50%;
+  z-index: -1;
+}
+
+.cloud2 {
+  position: absolute;
+  top: 22%; left: 62%;
+}
+
+.cloud3 {
+  position: absolute;
+  top: 30%; left: 30%;
+}
+
+.circle {
+  position: absolute;
+  background: #fff;
+}
+
+.circle:nth-child(1) {
+  border-radius: 30px;
+  height: 50px;
+  width: 150px;
+}
+
+.circle:nth-child(2) {
+  border-radius: 50%;
+  width: 80px; height: 80px;
+  margin-top: -40px;
+  margin-left: 23px;
+}
+
+.circle:nth-child(3) {
+  border-radius: 50%;
+  width: 50px; height: 50px;
+  margin-top: -25px;
+  margin-left: 80px;
+}
+
+/*  cloud animation  */
+.cloud1 {
+  animation: slideOver 15s infinite linear;
+  -webkit-animation: slideOver 15s infinite linear;
+}
+
+.cloud2 {
+  animation: slideOver 8s infinite linear;
+  -webkit-animation: slideOver 8s infinite linear;
+}
+
+.cloud3 {
+  animation: slideOver 6s infinite linear;
+  -webkit-animation: slideOver 6s infinite linear;
+}
+
+.mountains {
+  animation: mountainSlide 200s infinite linear;
+  -webkit-animation: mountainSlide 200s infinite linear;
+}
+
+img {
+  animation: bounce 1s infinite;
+  -webkit-animation: bounce 1s infinite;
+}
+
+@-webkit-keyframes slideOver {
+  0% {
+    transform: translateX(1500px);
+    -webkit-transform: translateX(1500px);
+  }
+
+  100% {
+    transform: translateX(--1000px);
+    -webkit-transform: translateX(-1000px);
+  }
+}
+
+@keyframes slideOver {
+  0% {
+    transform: translateX(1500px);
+    -webkit-transform: translateX(1500px);
+  }
+
+  100% {
+    transform: translateX(--1000px);
+    -webkit-transform: translateX(-1000px);
+  }
+}
+
+@-webkit-keyframes mountainSlide {
+  0% {
+    transform: translateX(200px);
+    -webkit-transform: translateX(200px);
+  }
+
+  100% {
+    transform: translateX(-800px);
+    -webkit-transform: translateX(-800px);
+  }
+}
+
+@keyframes mountainSlide {
+  0% {
+    transform: translateX(200px);
+    -webkit-transform: translateX(200px);
+  }
+
+  100% {
+    transform: translateX(-800px);
+    -webkit-transform: translateX(-800px);
+  }
+}
+
+@-webkit-keyframes bounce {
+  50% {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+  }
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+  }
+}
+
+
+
+.mountains {
+  margin: 0 auto;
+  width: 50%; height: 50%;
+  z-index: -1;
+  position: absolute;
+  left: 30%; bottom: 40%;
+}
+
+.peak1, .peak2, .peak3 {
+  width:0; height: 0;
+}
+
+.peak1 {
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 300px solid SteelBlue;
+  position: absolute;
+  bottom: 0; left: 0;
+}
+
+.peak2 {
+  border-left: 150px solid transparent;
+  border-right: 175px solid transparent;
+  border-bottom: 150px solid SteelBlue;
+  position: absolute;
+  bottom: 0; left: 34%;
+}
+
+.peak3 {
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 200px solid SteelBlue;
+  position: absolute;
+  bottom: 0; left: 23%;
+}
+
+.car {
+  width: 20%;
+  position: absolute;
+  bottom: 20%; left: 40%;
+}
+
+.car img {
+  /*position: relative;*/
+  width: 100%;
+  /*left: 200%;*/
+}
+
+
+/* icon credit */
+.credit {
+  font-size: .7em;
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.credit a {
+  color: rgba(0,0,0, .7);
+  font-weight: bolder;
+}
