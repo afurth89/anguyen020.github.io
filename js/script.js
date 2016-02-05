@@ -1,7 +1,7 @@
 $(function() {
   $(".typed").typed({
     strings: ["corgi enthusiast", "artist", "full stack developer"],
-    typeSpeed: 2,
+    typeSpeed: 25,
     startDelay: 500,
     backDelay: 1800,
     callback: function() {
