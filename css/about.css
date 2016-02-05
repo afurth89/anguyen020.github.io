@@ -2,7 +2,13 @@ h1 {
   border-bottom: 2px dashed #3E4246;
   width: 60%;
   margin: 0 auto 5% auto;
+  font-size: 3em;
 }
+
+.main {
+  margin-top: 4%;
+}
+
 p {
   width: 60%;
   margin: 2% auto;
