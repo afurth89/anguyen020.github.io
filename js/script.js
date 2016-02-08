@@ -7,8 +7,7 @@ $(function() {
       $(".sub").typed({
         strings: ["corgi enthusiast", "artist", "full stack developer"],
         typeSpeed: 25,
-        startDelay: 500,
-        backDelay: 1800,
+        backDelay: 1300,
         callback: function() {
           setTimeout(function() {
             $('.hidden').css("opacity", 1);
