@@ -1,0 +1,37 @@
+#sect-projects div.fp-tableCell {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: space-around;
+          justify-content: space-around;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#sect-projects {
+  text-align: center;
+}
+
+#sect-projects a {
+  color: #3C3C3F;
+  text-decoration: none
+}
+
+a.code {
+  text-decoration: underline;
+}
+
+div.project {
+  float: left;
+  width: 15%;
+  margin: 1%;
+}
+
+img {
+  width: 100%;
+  margin-top: 2%;
+  border: 6px solid #fff;
+  outline: 1px solid #3E4246;
+}

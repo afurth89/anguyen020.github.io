@@ -4,30 +4,52 @@
   <meta charset="UTF-8">
   <meta name="description" content="Portfolio of Ashley Nguyen, prop builder turned full stack developer">
   <title>Ashley Nguyen | Full Stack Developer</title>
+
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,600,500' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/jQuery.fullPage.css">
   <link rel="shortcut icon" href="favicon.ico" >
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="projects/index.html">Projects</a>
-    <!-- <a href="codebytes/index.html">Code Bytes</a> -->
-  </nav>
+  <ul id="menu">
+      <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
+      <li data-menuanchor="about"><a href="#about">About</a></li>
+      <li data-menuanchor="projects"><a href="#projects">Projects</a></li>
+      <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+  </ul>
 
-  <div class="main">
-    <h1> <span class="name"></span></h1>
-    <h2> <span class="sub"></span> </h2>
-    <p class="hidden">
-      Send me an <a href="mailto:a.nguyen020@gmail.com">email</a>
-      or find me on <a href="https://github.com/anguyen020">GitHub</a>.
-    </p>
+  <div id="fullpage">
+      <div class="section" id="sect-home">
+        <h1>Hi, I'm Ashley.</h1>
+        <p><strike>corgi enthusiast</strike></p>
+        <p><strike>silent jedi</strike></p>
+        <p>full stack developer</p>
+      </div>
+
+      <div class="section" id="sect-about">
+        <p>
+          I'm Ashley Nguyen, a prop builder turned web developer. I graduated Northwestern University with a degree in theatre, but recently discovered a knack (and passion) for programming. I love building things, either with power tools or with javascript, and am exicted to learn about all of the tricks and challenges the web has to offer.
+        </p>
+
+        <p>
+          I'm currently attending Galvanize's Full Stack web development program in San Francisco, where I'm learning things like HTML/CSS, javascript, Node.js and Express, and PostgreSQL.
+        </p>
+      </div>
+
+      <div class="section" id="sect-projects"></div>
+
+      <div class="section" id="sect-contact">
+        <a href="mailto:a.nguyen020@gmail.com"><i class="fa fa-envelope-o fa-5x"></i></a>
+        <a href="https://github.com/anguyen020"><i class="fa fa-github fa-5x"></i></a>
+        <a href="https://www.linkedin.com/in/ashley-nguyen-a33969111"><i class="fa fa-linkedin-square fa-5x"></i></a>
+      </div>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script src="js/typed.js"></script>
+  <script src="js/jquery.fullPage.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
