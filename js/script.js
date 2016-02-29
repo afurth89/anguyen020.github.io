@@ -12,8 +12,8 @@ var projects = [
   { name: 'space-invaders', url: 'http://www.ashleyngu.com/space-invaders',
     code: github + 'space-invaders' },
   { name: 'roadtripper', url: 'https://ashleyngu-roadtripper.herokuapp.com/', code: github + 'roadtripper'},
-  { name: 'reddit-clone', url: 'http://www.ashleyngu.com/reddit-clone/',
-    code: github + 'reddit-clone'},
+  { name: 'reddit-redux', url: 'http://ashleyngu-reddit.herokuapp.com/',
+    code: github + 'reddit-redux'},
   { name: 'love-a-mole', url: 'https://www.ashleyngu.com/love-a-mole',
     code: github + 'love-a-mole' },
   { name: 'pixel-art-maker', url: 'http://www.ashleyngu.com/pixel-art-maker', code: github + 'pixel-art-maker'}
