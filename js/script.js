@@ -9,13 +9,13 @@ $(document).ready(function() {
 //  Add projects to the page
 var github = 'https://github.com/anguyen020/'
 var projects = [
+  { name: 'pictobook', url: 'http://pictobook.herokuapp.com',
+    code: github + 'pictobook' },
   { name: 'space-invaders', url: 'http://www.ashleyngu.com/space-invaders',
     code: github + 'space-invaders' },
   { name: 'roadtripper', url: 'https://ashleyngu-roadtripper.herokuapp.com/', code: github + 'roadtripper'},
   { name: 'reddit-clone', url: 'http://ashleyngu-reddit.herokuapp.com/',
     code: github + 'reddit-redux'},
-  { name: 'love-a-mole', url: 'https://www.ashleyngu.com/love-a-mole',
-    code: github + 'love-a-mole' },
   { name: 'pixel-art-maker', url: 'http://www.ashleyngu.com/pixel-art-maker', code: github + 'pixel-art-maker'}
 ];
 var fragment = document.createDocumentFragment();
